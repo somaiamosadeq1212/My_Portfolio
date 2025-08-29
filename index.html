@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.min.css">
+
+    <!-- online bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+
+            <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <!-- <link rel="stylesheet" href="style.css"> -->
+
+        <!-- <link rel="stylesheet" href="style.css"> -->
+
+        <style>
+  body{
+   font-family: 'vazirmatn', sans-serif;
+        background: linear-gradient(135deg,#1f1c2c,#928dab);
+        color: #fff;
+  }
+  .banner{
+     height: 300px; 
+     text-align: center;
+     padding-top: 150px;
+  }
+  .banner h1{
+    margin: auto;
+     font-size: 3rem;
+    font-weight: bold;
+  }
+  .hero{
+    /* background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), */
+    /* url(images/01.jpg) center/cover; */
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+  }
+  .hero h1{
+    font-size: 3rem;
+    font-weight: bold;
+  }
+ 
+  .section-title{
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+  }
+  .card img{
+    height: 200px;
+    object-fit: cover;
+  }
+  .card{
+    transform: transform 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-in-out;
+    color: #fff;
+
+
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+p{
+    color: antiquewhite;
+}
+h6{
+color: antiquewhite;
+}
+i{
+    color: antiquewhite;
+}
+a i{
+    color: antiquewhite;
+}
+a i:hover{
+    color: #ea6851;
+
+}
+
+.changecolor{
+   font-family: 'vazirmatn', sans-serif;
+     font-weight: bold;
+    font-size: 2.4rem;
+     line-height: 40px;
+     padding-top: 20px;
+      color:aqua;
+       animation: mymove 2s infinite;
+       }
+@keyframes mymove {
+    0% {color: rgb(33, 33, 100);}
+    25% {color: rgb(16, 121, 73);}
+    50% {color: rgb(146, 75, 128);}
+    75% {-color: rgb(111, 121, 10);}
+    100% {color: rgb(39, 3, 3);}
+     }
+
+.custom-imge{
+    width: 100%;
+    object-fit: cover;
+}
+h1{
+    /* color:rgb(71, 55, 39); */
+}
+
+  /* footer */
+  @media (max-width: 900px) {
+    #footer{
+        text-align: center;
+    }   
+} 
+
+.zoom-in-text{
+    opacity: 0;
+    transform: scale(0.8);
+    animation: zoomIn 2s infinite;
+    color: rgb(202, 188, 219);
+}
+@keyframes zoomIn{
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.progress-bar{
+        /* background: linear-gradient(45deg, #f0741b, #d22d7d); */
+                background: linear-gradient(45deg, #b0abc4, #a295ee);
+                color: #1f1c2c;
+                font-size: 15px;
+
+}
+.btn{
+    /* background: linear-gradient(45deg, #f0741b, #d22d7d); */
+        /* background: linear-gradient(45deg, #373150, #b7b0dd); */
+                background: linear-gradient(45deg, #0e0d13, #a295ee);
+
+    color: #fff;
+
+}
+#education{
+    max-width: 50%;
+    font-size: 20px;
+}
+ .custom-img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            align-items: center;
+        }
+
+        .rounded-circle{
+            width: 300px;
+
+            /* align-items: center; */
+        }
+        .navbar{
+            background: linear-gradient(45deg, #685e88, #2b2938);
+        }
+    
+#footer{
+     background: linear-gradient(45deg, #685e88, #2b2938);
+
+}
+</style>
+</head>
+<body>
+
+     <section id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a id="nav" class="navbar-brand" href="#">My Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-marcup" aria-controls="navbar-Nav">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbar-marcup">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#footer" class="nav-link">Cantact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+    
+    <!-- header -->
+     <div class="contanier" id="hero">
+        <div class="banner">
+            
+            <h1 class="changecolor">Welcome to my portfolio</h1>
+        
+        </div>
+
+
+     <header class="hero animate_animated animate_fadeInDown">
+        
+             <img src="images/پروفایل دختر برنامه نویس.jpg" class="rounded-circle custom-img mb-5">
+               
+        <h1 class="zoom-in-text">Somaya Mosadiq</h1>
+        <p class="lead mb-5 mt-5">I am a Web Designer</p>
+        <a href="#projects" class="btn btn-primary btn-lg animate_animated animate_pulse animate_infinite">View Projects</a>
+     </header>
+     </div>
+
+    <!-- start about -->
+<section id="about">
+    <div class="container mt-5 mb-5 pb-5">
+        <h1 class="text-md-left mb-5 pb-3 text-center zoom-in-text">About Us</h1>
+        <div class="row pt-5">
+            <div class="col-md-6">
+                <img class="custom-imge" src="images/web.jpg" alt="">
+            </div>
+            <div class="col-md-6 pl-5 pt-4">
+                <p style="font-size:20px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+This website is about my portfolio. if you want to undrestand about me, my education, my skils and my projects, you can see this website.
+I am Somaia Mosadiq, and i have bacholor degree from computer science, database department of herat university. and also i am a student at codeToInspire (CTI) in the web design section.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end about -->
+
+<!-- start education -->
+ <section class="py-5" data-aos="fade-right">
+    <div class="container" id="education">
+        <h2 class="section-title zoom-in-text">My education</h2>
+        <div class="row text-center">
+           <div class="col mb-4">
+                <div class="card">
+            <div class="card-body text-left">
+          <form>
+            <input type="checkbox" name="vehicle1" value="Bike" checked> Bacholor Of Computer Science
+              <br>
+                <p style="font-size: 15px; padding-left: 30px;">Database Department | Herat Univercity</p>
+              <input type="checkbox" name="vehicle2" value="Car" checked> High School Diploma
+          </form>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+<!-- end education -->
+
+<!-- skils -->
+ <section class="py-5" data-aos="fade-right">
+    <div class="container">
+        <h2 class="section-title zoom-in-text">My Skils</h2>
+        <div class="row text-center">
+            <div class="col-md-3 col-6 mb-4">
+                <div class="card">
+            <div class="card-body text-left">
+                <h5 class="card-title">HTML5</h5>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 98%;">98%</div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+           <div class="col-md-3 col-6 mb-4">
+                <div class="card">
+            <div class="card-body text-left">
+                <h5 class="card-title">CSS3</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-success" style="width: 95%;">95%</div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+           <div class="col-md-3 col-6 mb-4">
+                <div class="card">
+            <div class="card-body text-left">
+                <h5 class="card-title">bootstrap</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-success" style="width: 90%;">90%</div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+            <div class="col-md-3 col-6 mb-4">
+                <div class="card">
+            <div class="card-body text-left">
+                <h5 class="card-title">Javascript</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-success" style="width: 60%;">60%</div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-3 col-6 mb-4">
+                <div class="card">
+            <div class="card-body text-left">
+                <h5 class="card-title">Database System</h5>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+           <div class="col-md-3 col-6 mb-4">
+                <div class="card">
+            <div class="card-body text-left">
+                <h5 class="card-title">wordpress</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-success" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+           <div class="col-md-3 col-6 mb-4">
+                <div class="card">
+            <div class="card-body text-left">
+                <h5 class="card-title">codeIgniter</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-success" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+            <div class="col-md-3 col-6 mb-4">
+                <div class="card">
+            <div class="card-body text-left">
+                <h5 class="card-title">ICDL</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-success" style="width: 90%;">90%</div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+ </section>
+
+ <!-- PROJECTS -->
+    <section class="container py-5" id="projects">
+        <div class="container">
+        <h2 class="section-title zoom-in-text" data-aos="fade-up">My Projects</h2>
+        
+        <div class="row g-4  py-4">
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                <div class="card shadow-sm">
+                    <img src="images/guess number.jpg" alt="" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Guess Number Project</h5>
+                        <p class="card-text">computer generate a number and you can guess that number!</p>
+                        <a href="https://somaiamosadeq1212.github.io/GuessNumber/" class="btn">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                <div class="card shadow-sm">
+                    <img src="images/bandicam 2025-08-29 10-05-57-559.jpg" alt="" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Foodie Hub Website</h5>
+                        <p class="card-text">this website is about food menu of restaurant.</p>
+                        <a href="https://somaiamosadeq1212.github.io/Foodie_Hub/" class="btn">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                <div class="card shadow-sm">
+                    <img src="images/coffee order.jpg" alt="" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Coffee smart order</h5>
+                        <p class="card-text">Order the types of coffee and calculation the bill</p>
+                        <a href="https://somaiamosadeq1212.github.io/Coffee-Smart-Order/" class="btn">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                <div class="card shadow-sm">
+                    <img src="images/calcurator.jpg" alt="" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Simple Calcorator</h5>
+                        <p class="card-text">This is a simple calcurator, which can calculate the four operations.</p>
+                        <a href="https://somaiamosadeq1212.github.io/Simple-Calcorator/" class="btn">View</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="row g-4  py-4">
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                <div class="card shadow-sm">
+                    <img src="images/trafic light.jpg" alt="" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Traffic Light App</h5>
+                        <p class="card-text">this web pgee show the traffic light, which created with Javascript.</p>
+                        <a href="https://somaiamosadeq1212.github.io/Traffic_Light/" class="btn">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                <div class="card shadow-sm">
+                    <img src="images/movies.jpg" alt="" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Movies website</h5>
+                        <p class="card-text">In this website is you can see the favorite movies.</p>
+                        <a href="https://somaiamosadeq1212.github.io/Movies/" class="btn">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                <div class="card shadow-sm">
+                    <img src="images/movie.jpg" alt="" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Movie theater</h5>
+                        <p class="card-text">this website is about movies theater, which designed with HTML and CSS.</p>
+                        <a href="https://somaiamosadeq1212.github.io/Movie-Theater/" class="btn">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+                <div class="card shadow-sm">
+                    <img src="images/online store.jpg" alt="" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Online store website</h5>
+                        <p class="card-text">This is an onlone store website which designed with HTML and CSS.</p>
+                        <a href="https://somaiamosadeq1212.github.io/Online_Store/" class="btn">View</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+      
+<!-- start footer -->
+<section id="footer">
+  <footer class="text-light mt-5 pt-5 pb-4">
+    <div class="container text-md-left">
+      <div class="row text-md-left">
+
+        <!-- foodie hub section -->
+        <div class="col-md-4 col-lg-4 mb-4">
+          <h6 style="font-size: 20px; color:antiquewhite;">My Portfolio</h6>
+          <p style="font-size: 16px;">This website is about my portfolio. if you want to undrestand about me, my education, my skils and my projects.</p>
+          <div>
+        <a href="#" class="text-light me-3" style="font-size: 30px;"><i class="fa fa-twitter-square"></i></a>
+        <a href="#" class="text-light me-3" style="font-size: 30px;"><i class="fa fa-facebook-square"></i></a>
+        <a href="#" class="text-light me-3" style="font-size: 30px;"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="text-light me-3" style="font-size: 30px;"><i class="fa fa-linkedin-square"></i></a>
+      </div>
+    </div>
+
+    <!-- usful link -->
+    <div class="col-md-4 col-lg-4 mb-4 ml-4">
+      <h6 class="text-uppercase fw-bold" style="font-size: 20px; color: antiquewhite;">Usful Links</h6>
+      <p style="font-size: 16px;"><a href="" class="text-decoration-none" style=" color: antiquewhite;">Home</a></p>
+      <p style="font-size: 16px;"><a href="" class="text-decoration-none" style=" color: antiquewhite;">About</a></p>
+      <p style="font-size: 16px;"><a href="" class="text-decoration-none" style=" color: antiquewhite;">Projects</a></p>
+      <p style="font-size: 16px;"><a href="" class=" text-decoration-none" style=" color: antiquewhite;">contact</a></p>
+    </div>
+
+    <!-- cantact-section -->
+     <div class="col-md-4 col-lg-4 mb-4">
+      <h6 class="text-uppercase fw-bold" style="font-size: 20px;">Have a Questions?</h6>
+      <p style="font-size: 16px;"><i class="fa fa-map-marker me-2" style="font-size: 25px;"></i>Herat City, Afghanistan Cuntary.</p>
+      <p style="font-size: 16px;"><i class="fa fa-phone me-2" style="font-size: 25px;"></i>+93 799 40 21 99</p>
+      <p style="font-size: 16px;"><i class="fa fa-envelope me-2" style="font-size: 25px;"></i>mosadiqsomaia@gmail.com</p>
+     </div>
+  </div>
+
+  <hr class="mb-4 mt-4">
+  <div class="text-center">
+    <p class="mb-0" style="font-size: 16px;">
+      Copyright ©2025 All rights reserved | Somaia Mosadiq
+    </p>
+  </div>
+  </div>
+  </footer>
+</section>
+<!-- end footer -->
+
+    <script src="bootstrap-5.3.6-dist/js/bootstrap.min.js"></script>
+
+     <!-- online -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+</body>
+</html>
